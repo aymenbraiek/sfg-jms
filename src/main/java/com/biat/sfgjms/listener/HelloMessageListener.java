@@ -4,20 +4,17 @@ import com.biat.sfgjms.config.JmsConfig;
 import com.biat.sfgjms.model.HelloWorldMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jms.annotation.JmsListener;
-import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.handler.annotation.Headers;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
-
-import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.Message;
 import java.util.UUID;
 
 @RequiredArgsConstructor
-@Component
+//@Component
 public class HelloMessageListener {
 
     private final JmsTemplate jmsTemplate;
